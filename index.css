@@ -23,8 +23,13 @@ main{
     background-color: brown;
 }
 
+#picture{
+    margin: 60px;
+    background-color: red;
+}
+
 footer{
-    
+
 }
 
 
