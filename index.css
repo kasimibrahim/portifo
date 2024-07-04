@@ -1,10 +1,23 @@
 body{
     overflow: hidden;
+    font-family:'Courier New', Courier, monospace
 }
 
 nav{
-    height: 5vh;
-    background-color: beige;
+    height: 7vh;
+    background-color: #fffaff;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 25px;
+    margin: 7px;
+    border-bottom: 1.5px solid red;
+}
+nav h3{
+    text-align: center;
+}
+
+#navs{
+    display: flex;
 }
 
 main{
@@ -14,19 +27,41 @@ main{
 }
 
 #left{
-    width: 30%;
+    width: 40%;
     background-color: aqua;
 }
 
 #right{
-    width: 70%;
-    background-color: brown;
+    width: 60%;
+    background-color: white;
+    max-width: 100%;
 }
 
-#picture{
+#intro-right{
+    position: relative;
+    left: 10em;
+    top: 35%;
+}
+
+a{
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+a:hover{
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-size: large;
+}
+
+
+/* #picture{
     margin: 60px;
     background-color: red;
-}
+} */
 
 footer{
 
