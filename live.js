@@ -5,7 +5,7 @@ var typewriter = new Typewriter(app, {
   delay: 5,
 });
 
-var skills = ["Software Development", "A.I", "Web Development", "Teaching Currulum Design", "Agri Tech"]
+var skills = ["Software Development", "A.I", "Web Development", "Data Analytics", "AgriTech"]
 
 for (var s of skills){
     typewriter
