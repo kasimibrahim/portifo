@@ -28,3 +28,11 @@ for (var s of skills){
 //   .pauseFor(1000)
 //   .start();
 
+
+//NAVBAR RESPONSIVENESS
+const menuToggle = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('#navs');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
