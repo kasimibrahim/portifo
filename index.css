@@ -23,7 +23,7 @@ nav h3{
 
 main{
     height: 90vh;
-    display: flex;
+    /* display: flex; */
 }
 
 #left{
@@ -39,7 +39,7 @@ main{
     background-color: white;
     max-width: 60%;
     opacity: 0.8;
-    position: relative;
+    /* position: relative; */
 }
 
 #intro-right{
@@ -96,7 +96,7 @@ footer{
     #navs {
         display: none;
         flex-direction: column;
-        position: absolute;
+        /* position: absolute; */
         background-color: red;
     }
 
@@ -112,6 +112,18 @@ footer{
     #navs.active {
         display: flex;
     }
+
+    #left{
+
+        position:static;
+        align-items: center;
+        margin: auto;
+        float: left;
+    }
+
+    
+
+
 }
 
 
