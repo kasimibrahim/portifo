@@ -24,12 +24,14 @@ nav h3{
 main{
     height: 90vh;
     display: flex;
+    position: absolute;
 }
 
 #left{
     width: 40%;
     background-color: white;
     position: relative;
+    align-items: flex-end;
     
 }
 
@@ -38,10 +40,10 @@ main{
     background-color: white;
     max-width: 60%;
     opacity: 0.8;
+    position: relative;
 }
 
 #intro-right{
-    position: relative;
     left: 2em;
     top: 3%;
 }
@@ -84,19 +86,16 @@ footer{
 .bar {
     height: 3px;
     width: 25px;
-    background-color: #fff;
-    margin: 4px 0;
+    background-color: red;
+    margin: 2px 0;
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     #navs {
         display: none;
         flex-direction: column;
-        width: 100%;
         position: absolute;
-        top: 60px;
-        left: 0;
         background-color: #333;
     }
 
@@ -109,7 +108,7 @@ footer{
         display: flex;
     }
 
-    #navs:active {
+    #navs.active {
         display: flex;
     }
 }
