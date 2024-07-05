@@ -24,7 +24,6 @@ nav h3{
 main{
     height: 90vh;
     display: flex;
-    position: absolute;
 }
 
 #left{
@@ -98,7 +97,7 @@ footer{
         display: none;
         flex-direction: column;
         position: absolute;
-        background-color: #333;
+        background-color: red;
     }
 
     #navs li {
