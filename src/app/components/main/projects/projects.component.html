@@ -1,0 +1,767 @@
+<div *ngIf="loader" class="pre-loader">
+  <img src="assets/images/loader.gif" alt="pre loader" />
+</div>
+<main>
+  <div class="container page-header-wrapper">
+    <h2 class="page-title">
+      <i class="bi bi-menu-button-wide-fill"></i> My Projects
+    </h2>
+  </div>
+  <div class="container p-0">
+    <div class="projects-grid">
+      <div class="pro_card">
+        <div class="card">
+          <!-- <h1 class="card-title">Frontend Mentor</h1> -->
+          <img
+            src="assets/images/frontendMentor.png"
+            class="card-img-top"
+            alt="project-thumnail"
+          />
+          <div class="card-body">
+            <div class="topic-wrapper">
+              <h2>Frontend Mentor</h2>
+              <i
+                class="bi bi-three-dots-vertical"
+                [matMenuTriggerFor]="menu"
+              ></i>
+              <mat-menu #menu="matMenu">
+                <!-- <a href="https://www.choppbeta.com/" target="_blank"><button mat-menu-item> Github</button></a> -->
+                <a
+                  href="https://fronted-feedbacks-silas.netlify.app/"
+                  target="_blank"
+                  ><button mat-menu-item>Demo</button></a
+                >
+              </mat-menu>
+            </div>
+
+            <p class="card-text">
+              Get Interctive Feedback from your Frontend Designs from Experts
+            </p>
+            <div class="tech-stacks">
+              <div class="box1">React</div>
+              <div class="box2">Redux</div>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://fronted-feedbacks-silas.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                matTooltip="Demo"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="view-project" mat-button>
+                  <i class="bi bi-eye"></i></button
+              ></a>
+              <a
+                href="https://github.com/Silas281/frontend-mentor.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                matTooltip="View source Code on GitHub"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="github-clone" mat-button>
+                  <i class="bi bi-github"></i></button
+              ></a>
+            </div>
+          </div>
+          <!-- <div class="project-desc">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ipsam voluptate fuga quisquam ut nisi quod dolor totam aliquid vitae aspernatur.
+                   Ad earum culpa repellat necessitatibus quod laudantium illo voluptatem.
+                </div> -->
+        </div>
+      </div>
+      <div class="pro_card">
+        <div class="card">
+          <!-- <h1 class="card-title">CropLab App</h1> -->
+          <img
+            src="assets/images/CropLabHomePage.png"
+            class="card-img-top"
+            alt="project-thumnail"
+          />
+          <div class="card-body">
+            <div class="topic-wrapper">
+              <h2>CropLab App</h2>
+              <i
+                class="bi bi-three-dots-vertical"
+                [matMenuTriggerFor]="cropLab"
+              ></i>
+              <mat-menu #cropLab="matMenu">
+                <a
+                  href="assets/cv/SilasSangmin-Applied Project.pdf"
+                  target="_blank"
+                  ><button mat-menu-item>Download Paper</button></a
+                >
+              </mat-menu>
+            </div>
+
+            <p class="card-text">
+              An App developed, integrated with a deep-learning model to aid
+              farmers in diagnosing and treating their crop plants
+            </p>
+            <div class="tech-stacks">
+              <div class="box1">Flutter</div>
+              <div class="box2">Dart</div>
+              <div class="box1">FastAPI</div>
+            </div>
+            <div class="card-actions">
+              <a
+                href="assets/cv/CropLab_AndroidV1.apk"
+                target="_blank"
+                rel="noopener noreferrer"
+                matTooltip="Download App"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="view-project" mat-button>
+                  <i class="bi bi-eye"></i></button
+              ></a>
+              <a
+                href="https://github.com/Ashesi-Org/CropLab-Mobile.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                matTooltip="View source Code on GitHub"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="github-clone" mat-button>
+                  <i class="bi bi-github"></i></button
+              ></a>
+            </div>
+          </div>
+          <!-- <div class="project-desc">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ipsam voluptate fuga quisquam ut nisi quod dolor totam aliquid vitae aspernatur.
+                   Ad earum culpa repellat necessitatibus quod laudantium illo voluptatem.
+                </div> -->
+        </div>
+      </div>
+
+      <div class="pro_card">
+        <div class="card">
+          <!-- <h1 class="card-title">StoreFronmall</h1> -->
+          <img
+            src="assets/images/mall.jpg"
+            class="card-img-top"
+            alt="project-thumnail"
+          />
+          <div class="card-body">
+            <div class="topic-wrapper">
+              <h2>StoreFronmall</h2>
+              <i
+                class="bi bi-three-dots-vertical"
+                [matMenuTriggerFor]="menu2"
+              ></i>
+              <mat-menu #menu2="matMenu">
+                <!-- <a href="https://storefrontrevamp.herokuapp.com/" target="_blank"><button mat-menu-item> GitHub</button></a> -->
+                <a href="https://kokorko.com" target="_blank"
+                  ><button mat-menu-item>Demo</button></a
+                >
+              </mat-menu>
+            </div>
+
+            <p class="card-text">KudiGo StoreFronmall Ecommerce platform</p>
+            <div class="tech-stacks">
+              <div class="box1">Angular</div>
+              <div class="box2">Typescript</div>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://kokorko.com"
+                target="_blank"
+                matTooltip="Demo"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="view-project" mat-button>
+                  <i class="bi bi-eye"></i></button
+              ></a>
+              <a
+                href="https://kokorko.com"
+                target="_blank"
+                matTooltip="View source Code on GitHub"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+              >
+                <button class="github-clone" mat-button>
+                  <i class="bi bi-github"></i></button
+              ></a>
+            </div>
+          </div>
+          <!-- <div class="project-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ipsam voluptate fuga quisquam ut nisi quod dolor totam aliquid vitae aspernatur.
+             Ad earum culpa repellat necessitatibus quod laudantium illo voluptatem.
+          </div> -->
+        </div>
+      </div>
+
+      <div class="pro_card">
+        <div class="card">
+          <!-- <h1 class="card-title">Hate-Speech detection</h1> -->
+          <img
+            src="assets/images/github.png"
+            class="card-img-top"
+            alt="project-thumnail"
+          />
+          <div class="card-body">
+            <div class="topic-wrapper">
+              <h2>Hate-Speech detection</h2>
+              <i
+                class="bi bi-three-dots-vertical"
+                [matMenuTriggerFor]="menu1"
+              ></i>
+              <mat-menu #menu1="matMenu">
+                <a
+                  href="https://colab.research.google.com/drive/1efNSyJIvyU_cJS9BN5zmfBszo6eCH5Qu?usp=sharing"
+                  target="_blank"
+                  ><button mat-menu-item>GitHub</button></a
+                >
+                <!-- <a href="https://www.choppbeta.com/" target="_blank"><button mat-menu-item> Demo</button></a> -->
+              </mat-menu>
+            </div>
+
+            <p class="card-text">
+              A Natural Language Processing model to detect hate speech on
+              social media.
+            </p>
+            <div class="tech-stacks">
+              <div class="box1">Python</div>
+              <div class="box2">PyTorch</div>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://colab.research.google.com/drive/1efNSyJIvyU_cJS9BN5zmfBszo6eCH5Qu?usp=sharing"
+                target="_blank"
+                matTooltip="Demo"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+              >
+                <button class="view-project" mat-button>
+                  <i class="bi bi-eye"></i></button
+              ></a>
+
+              <a
+                href="https://colab.research.google.com/drive/1efNSyJIvyU_cJS9BN5zmfBszo6eCH5Qu?usp=sharing"
+                target="_blank"
+                matTooltip="View source Code on GitHub"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+              >
+                <button class="github-clone" mat-button>
+                  <i class="bi bi-github"></i></button
+              ></a>
+            </div>
+          </div>
+          <!-- <div class="project-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ipsam voluptate fuga quisquam ut nisi quod dolor totam aliquid vitae aspernatur.
+             Ad earum culpa repellat necessitatibus quod laudantium illo voluptatem.
+          </div> -->
+        </div>
+      </div>
+
+      <!--
+        New Projects Additin
+      -->
+      <div class="pro_card">
+        <div class="card">
+          <!-- <h1 class="card-title">Enapa Shop</h1> -->
+          <img
+            src="assets/images/djan_ministries.png"
+            class="card-img-top"
+            alt="project-thumnail"
+          />
+          <div class="card-body">
+            <div class="topic-wrapper">
+              <h2>Djans Ministries</h2>
+              <i
+                class="bi bi-three-dots-vertical"
+                [matMenuTriggerFor]="chopBetter"
+              ></i>
+              <mat-menu #chopBetter="matMenu">
+                <!-- <a href="https://www.choppbeta.com/" target="_blank"><button mat-menu-item> Github</button></a> -->
+                <a
+                  href="https://acquahdjanministries.com/"
+                  target="_blank"
+                  ><button mat-menu-item>View</button></a
+                >
+              </mat-menu>
+            </div>
+
+            <p class="card-text">
+              THE ACQUAH DJANS Ministries. A Website for a Client
+            </p>
+            <div class="tech-stacks">
+              <div class="box1">React</div>
+              <div class="box2">Tailwind CSS</div>
+              
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://acquahdjanministries.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                matTooltip="Demo"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="view-project" mat-button>
+                  <i class="bi bi-eye"></i></button
+              ></a>
+              <a
+                href="https://acquahdjanministries.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                matTooltip="View source Code on GitHub"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="github-clone" mat-button>
+                  <i class="bi bi-github"></i></button
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--New Addition End-->
+
+      <div class="pro_card">
+        <div class="card">
+          <!-- <h1 class="card-title">Enapa Shop</h1> -->
+          <img
+            src="assets/images/shopping_bags.jpg"
+            class="card-img-top"
+            alt="project-thumnail"
+          />
+          <div class="card-body">
+            <div class="topic-wrapper">
+              <h2>Enapa</h2>
+              <i
+                class="bi bi-three-dots-vertical"
+                [matMenuTriggerFor]="chopBetter"
+              ></i>
+              <mat-menu #chopBetter="matMenu">
+                <!-- <a href="https://www.choppbeta.com/" target="_blank"><button mat-menu-item> Github</button></a> -->
+                <a
+                  href="https://enapa-v1-b1bfe84b44d3.herokuapp.com/"
+                  target="_blank"
+                  ><button mat-menu-item>Demo</button></a
+                >
+              </mat-menu>
+            </div>
+
+            <p class="card-text">
+              Ecommerce website where users can buy clothes with payments
+              integrated
+            </p>
+            <div class="tech-stacks">
+              <div class="box1">Angular</div>
+              <div class="box2">Typescript</div>
+              <div class="box1">Boostrap</div>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://enapa-v1-b1bfe84b44d3.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                matTooltip="Demo"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="view-project" mat-button>
+                  <i class="bi bi-eye"></i></button
+              ></a>
+              <a
+                href="https://enapa-v1-b1bfe84b44d3.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                matTooltip="View source Code on GitHub"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="github-clone" mat-button>
+                  <i class="bi bi-github"></i></button
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pro_card">
+        <div class="card">
+          <!-- <h1 class="card-title">GPL Base</h1> -->
+          <img
+            src="assets/images/github.png"
+            class="card-img-top"
+            alt="project-thumnail"
+          />
+          <div class="card-body">
+            <div class="topic-wrapper">
+              <h2>GPL Base</h2>
+              <i
+                class="bi bi-three-dots-vertical"
+                [matMenuTriggerFor]="menugpl"
+              ></i>
+              <mat-menu #menugpl="matMenu">
+                <a
+                  href="https://github.com/Silas281/ghana-premier-league"
+                  target="_blank"
+                  ><button mat-menu-item>Github</button></a
+                >
+                <!-- <a href="https://www.choppbeta.com/" target="_blank"><button mat-menu-item> Demo</button></a> -->
+              </mat-menu>
+            </div>
+
+            <p class="card-text">
+              Full stuck Ghana Premier League database management system
+            </p>
+            <div class="tech-stacks">
+              <div class="box1">SQL</div>
+              <div class="box2">PHP</div>
+              <div class="box1">HTML & JavaScript</div>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://github.com/Silas281/ghana-premier-league"
+                target="_blank"
+                matTooltip="Demo"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+              >
+                <button class="view-project" mat-button>
+                  <i class="bi bi-eye"></i></button
+              ></a>
+              <a
+                href="https://github.com/Silas281/ghana-premier-league"
+                target="_blank"
+                matTooltip="View source Code on GitHub"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+              >
+                <button class="github-clone" mat-button>
+                  <i class="bi bi-github"></i></button
+              ></a>
+            </div>
+          </div>
+          <!-- <div class="project-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ipsam voluptate fuga quisquam ut nisi quod dolor totam aliquid vitae aspernatur.
+             Ad earum culpa repellat necessitatibus quod laudantium illo voluptatem.
+          </div> -->
+        </div>
+      </div>
+
+      <div class="pro_card">
+        <div class="card">
+          
+          <img
+            src="assets/images/bus.jpg"
+            class="card-img-top"
+            alt="project-thumnail"
+          />
+          <div class="card-body">
+            <div class="topic-wrapper">
+              <h2>Ashesi Bus Management System</h2>
+              <i
+                class="bi bi-three-dots-vertical"
+                [matMenuTriggerFor]="menugpl"
+              ></i>
+              <mat-menu #menugpl="matMenu">
+                <a
+                  href="https://vooom-admin-dashboard.netlify.app/home"
+                  target="_blank"
+                  ><button mat-menu-item>Github</button></a
+                >
+                <!-- <a href="https://www.choppbeta.com/" target="_blank"><button mat-menu-item> Demo</button></a> -->
+              </mat-menu>
+            </div>
+
+            <p class="card-text">
+              Ashesi Bus Management System- A Bus Management System 
+            </p>
+            <div class="tech-stacks">
+              <div class="box1">React</div>
+              <div class="box2">PHP</div>
+              <div class="box1">MySQL</div>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://vooom-admin-dashboard.netlify.app/home"
+                target="_blank"
+                matTooltip="Demo"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="view-project" mat-button>
+                  <i class="bi bi-eye"></i></button
+              ></a>
+              <a
+                href="https://vooom-admin-dashboard.netlify.app/home"
+                target="_blank"
+                matTooltip="View source Code on GitHub"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="github-clone" mat-button>
+                  <i class="bi bi-github"></i></button
+              ></a>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      
+      <div class="pro_card">
+        <div class="card">
+          <!-- <h1 class="card-title">Electronic voting system</h1> -->
+          <img
+            src="assets/images/e-vote.png"
+            class="card-img-top"
+            alt="project-thumnail"
+          />
+          <div class="card-body">
+            <div class="topic-wrapper">
+              <h2>Electronic voting system</h2>
+              <i
+                class="bi bi-three-dots-vertical"
+                [matMenuTriggerFor]="menuevote"
+              ></i>
+              <mat-menu #menuevote="matMenu">
+                <a
+                  href="https://github.com/Silas281/e-voting-system"
+                  target="_blank"
+                  ><button mat-menu-item>Github</button></a
+                >
+                <!-- <a href="" target="_blank"><button mat-menu-item> Demo</button></a> -->
+              </mat-menu>
+            </div>
+
+            <p class="card-text">An electronic voting system</p>
+            <div class="tech-stacks">
+              <div class="box1">Data structures</div>
+              <div class="box2">Java</div>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://github.com/Silas281/e-voting-system"
+                target="_blank"
+                matTooltip="Demo"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="view-project" mat-button>
+                  <i class="bi bi-eye"></i></button
+              ></a>
+              <a
+                href="https://github.com/Silas281/e-voting-system"
+                target="_blank"
+                matTooltip="View source Code on GitHub"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="github-clone" mat-button>
+                  <i class="bi bi-github"></i></button
+              ></a>
+            </div>
+          </div>
+          <!-- <div class="project-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ipsam voluptate fuga quisquam ut nisi quod dolor totam aliquid vitae aspernatur.
+             Ad earum culpa repellat necessitatibus quod laudantium illo voluptatem.
+          </div> -->
+        </div>
+      </div>
+      <div class="pro_card">
+        <div class="card">
+          <!-- <h1 class="card-title">Robot Optimal Path Finder</h1> -->
+          <img
+            src="assets/images/pathfinder.png"
+            class="card-img-top"
+            alt="project-thumnail"
+          />
+          <div class="card-body">
+            <div class="topic-wrapper">
+              <h2>Robot Optimal Path Finder</h2>
+              <i
+                class="bi bi-three-dots-vertical"
+                [matMenuTriggerFor]="menurobot"
+              ></i>
+              <mat-menu #menurobot="matMenu">
+                <a
+                  href="https://github.com/Silas281/robot-path-algo"
+                  target="_blank"
+                  ><button mat-menu-item>Github</button></a
+                >
+                <!-- <a href="" target="_blank"><button mat-menu-item> Demo</button></a> -->
+              </mat-menu>
+            </div>
+
+            <p class="card-text">
+              An algorithm Designed to find an optimal path for a robot delivery
+              machine
+            </p>
+            <div class="tech-stacks">
+              <div class="box1">Data structures</div>
+              <div class="box2">Python</div>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://github.com/Silas281/robot-path-algo"
+                target="_blank"
+                matTooltip="Demo"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="view-project" mat-button>
+                  <i class="bi bi-eye"></i></button
+              ></a>
+              <a
+                href="https://github.com/Silas281/robot-path-algo"
+                target="_blank"
+                matTooltip="View source Code on GitHub"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="github-clone" mat-button>
+                  <i class="bi bi-github"></i></button
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pro_card">
+        <div class="card">
+          <!-- <h1 class="card-title">Fastest Route algorithm</h1> -->
+          <img
+            src="assets/images/fastest.jpg"
+            class="card-img-top"
+            alt="project-thumnail"
+          />
+          <div class="card-body">
+            <div class="topic-wrapper">
+              <h2>Fastest Route algorithm</h2>
+              <i
+                class="bi bi-three-dots-vertical"
+                [matMenuTriggerFor]="menufastest"
+              ></i>
+              <mat-menu #menufastest="matMenu">
+                <a
+                  href="hhttps://github.com/Silas281/fastest-route"
+                  target="_blank"
+                  ><button mat-menu-item>Github</button></a
+                >
+                <!-- <a href="" target="_blank"><button mat-menu-item> Demo</button></a> -->
+              </mat-menu>
+            </div>
+
+            <p class="card-text">
+              Calculates the fastest path from a chosen city to another chosen
+              destination using a modified Dijkstra Algorithm
+            </p>
+            <div class="tech-stacks">
+              <div class="box1">Data structures</div>
+              <div class="box2">Java</div>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://github.com/Silas281/fastest-route"
+                target="_blank"
+                matTooltip="Demo"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="view-project" mat-button>
+                  <i class="bi bi-eye"></i></button
+              ></a>
+              <a
+                href="https://github.com/Silas281/fastest-route"
+                target="_blank"
+                matTooltip="View source Code on GitHub"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+                ><button class="github-clone" mat-button>
+                  <i class="bi bi-github"></i></button
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pro_card">
+        <div class="card">
+          <!-- <h1 class="card-title">Research Work</h1> -->
+          <img
+            src="assets/images/github.png"
+            class="card-img-top"
+            alt="project-thumnail"
+          />
+          <div class="card-body">
+            <div class="topic-wrapper">
+              <h2>Mobile Money fraud Detection & Control using AI</h2>
+              <i
+                class="bi bi-three-dots-vertical"
+                [matMenuTriggerFor]="researchmenu"
+              ></i>
+              <mat-menu #researchmenu="matMenu">
+                <a href="assets/cv/RM_final_Silas.pdf" target="_blank"
+                  ><button mat-menu-item>Download Paper</button></a
+                >
+                <!-- <a href="https://www.choppbeta.com/" target="_blank"><button mat-menu-item> Demo</button></a> -->
+              </mat-menu>
+            </div>
+
+            <p class="card-text">
+              The use of Machine Learning and Artificial Intelligence in
+              controlling Mobile Money Fraud in Ghana
+            </p>
+            <div class="tech-stacks">
+              <div class="box1">Research</div>
+              <div class="box2">R</div>
+              <div class="box2">AI</div>
+            </div>
+            <div class="card-actions">
+              <!-- <a href="https://colab.research.google.com/drive/1efNSyJIvyU_cJS9BN5zmfBszo6eCH5Qu?usp=sharing"
+                target="_blank"
+                matTooltip="Demo"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over">
+             <button class="view-project" mat-button><i class="bi bi-eye"></i></button></a> -->
+
+              <a
+                href="assets/cv/RM_final_Silas.pdf"
+                target="_blank"
+                matTooltip="Download research Paper"
+                matTooltipClass="tooltip-bg"
+                matTooltipPosition="above"
+                aria-label="Button that displays a tooltip when focused or hovered over"
+              >
+                <button class="github-clone" mat-button>
+                  Download Paper
+                </button></a
+              >
+            </div>
+          </div>
+          <!-- <div class="project-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ipsam voluptate fuga quisquam ut nisi quod dolor totam aliquid vitae aspernatur.
+             Ad earum culpa repellat necessitatibus quod laudantium illo voluptatem.
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!--Next Page-->
+<div class="container next-page-wrapper mt-3">
+  <button class="prev-page" [routerLink]="['/experience']">
+    <span><i class="bi bi-arrow-left"></i></span>Experience
+  </button>
+  <button class="next-page" [routerLink]="['/skills']">
+    Skills <span><i class="bi bi-arrow-right"></i></span>
+  </button>
+</div>

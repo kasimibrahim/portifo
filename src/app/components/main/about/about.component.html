@@ -1,0 +1,92 @@
+<div *ngIf="loader" class="pre-loader">
+  <img src="assets/images/loader.gif" alt="pre loader">
+</div>
+<main>
+  <!-- <div class="container page-header-wrapper">
+    <h2 class="page-title"><i class="bi bi-person-fill" id="top"></i>Silas Sangmin</h2>
+  </div> -->
+  <div class="container">
+    <div class="about-main pb-5">
+
+      <div class="container page-header-wrapper my-5">
+        <h2 class="page-title" id="contact"><i class="bi bi-telephone-inbound-fill me-2"></i>Contact Me</h2>
+      </div>
+
+      <div class="row contact-row ">
+        <div class="col-sm-12 col-md-7 col-lg-7">
+          <form class="contact-form" [formGroup]="contactFormGroup" (ngSubmit)="sendMessage(contactFormGroup.value)">
+            <mat-form-field appearance="fill" class="mat-form-field">
+              <mat-label>Full Name</mat-label>
+              <input matInput formControlName="fullName" class="mat-form-input">
+              <button *ngIf="fullNameCtrl?.valid" matSuffix mat-icon-button aria-label="Clear"
+                (click)="fullNameCtrl?.setValue('')">
+                <mat-icon>close</mat-icon>
+              </button>
+              <mat-error *ngIf="fullNameCtrl?.invalid && fullNameCtrl?.touched">
+                Please enter full Name
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="mat-form-field">
+              <mat-label>email address</mat-label>
+              <input type="email" matInput formControlName="email" class="mat-form-input">
+              <button *ngIf="emailCtrl?.valid" matSuffix mat-icon-button aria-label="Clear"
+                (click)="emailCtrl?.setValue('')">
+                <mat-icon>close</mat-icon>
+              </button>
+              <mat-error *ngIf="emailCtrl?.invalid && emailCtrl?.touched">
+                Please enter email
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="mat-form-field">
+              <mat-label>message</mat-label>
+              <textarea matInput formControlName="message" class="mat-form-input"></textarea>
+              <button *ngIf="messageCtrl?.valid" matSuffix mat-icon-button aria-label="Clear"
+                (click)="messageCtrl?.setValue('')">
+                <mat-icon>close</mat-icon>
+              </button>
+              <mat-error *ngIf="messageCtrl?.invalid && messageCtrl?.touched">
+                Please enter message
+              </mat-error>
+            </mat-form-field>
+
+            <button class="" mat-button type="submit" [disabled]="contactFormGroup.invalid"
+              [class.btn-disabled]="contactFormGroup.invalid">Send message</button>
+          </form>
+        </div>
+        <div class=" col-sm-12 col-md-1 col-lg-1 or">
+          OR
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <div class="contact-channels-wrapper">
+            <ul>
+              <li> <a href="mailto:{{email}}" style="text-decoration:none ;"><span class="icon"><i
+                      class="bi bi-envelope-fill"></i></span><span class="text">Send email</span></a> </li>
+              <li><a href="https://web.facebook.com/sangmine.silas/" target="_blank"
+                  style="text-decoration:none ;"><span class="icon"><i class="bi bi-facebook"></i></span> <span
+                    class="text">Facebook</span> </a></li>
+              <li> <a href="https://www.instagram.com/sangmin_silas/" target="_blank"
+                  style="text-decoration:none ;"><span class="icon"><i class="bi bi-instagram"></i></span> <span
+                    class="text">Instagram </span></a> </li>
+              <li> <a href="https://wa.me/+233542893998?text=Hello Silas!" target="_blank"
+                  style="text-decoration:none ;"><span class="icon"> <i class="bi bi-whatsapp"></i></span> <span
+                    class="text">WhatsApp</span> </a></li>
+              <li><a href="https://github.com/Silas281" target="_blank" style="text-decoration:none ;"> <span
+                    class="icon"><i class="bi bi-github"></i></span> <span class="text">GitHub</span> </a></li>
+              <li> <a href="https://www.linkedin.com/in/silas-sangmin/" target="_blank"
+                  style="text-decoration:none ;"><span class="icon"> <i class="bi bi-linkedin"></i></span> <span
+                    class="text">LinkedIn</span> </a></li>
+              <li> <a href="tel:054-289-3998" target="_blank" style="text-decoration:none ;"><span class="icon"><i
+                      class="bi bi-telephone"></i></span> <span class="text">Call</span></a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!--Next Page-->
+<div class="container next-page-wrapper">
+  <button class="prev-page" [routerLink]="['/education']"><span><i class="bi bi-arrow-left"></i></span>Education</button>
+  
+</div>

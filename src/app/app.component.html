@@ -1,0 +1,47 @@
+
+<app-nav-bar></app-nav-bar>
+<mat-toolbar class="mat-elevation-z8 navbar-main ps-0 show_mobile" >
+  <div class="menu-wrapper">
+    <a class="show_mobile px-0 mx-0" mat-button (click)="drawer.toggle()" (click)="togglerOpened=!togglerOpened" > <mat-icon *ngIf="togglerOpened">close</mat-icon><mat-icon *ngIf="!togglerOpened">menu</mat-icon> </a>
+  </div>
+
+  <div class="nav-spacer">
+
+  </div>
+  <div class="logo-wrapper" [routerLink]="['/']">
+    <img src="assets/images/Kasim.jpg" alt="profile-photo"> <span class="nav-name-span" > <span class="pt-2">Kasim Ibrahim</span> <small class="p-0 text-highlight">Software Engineer</small> </span>
+  </div>
+</mat-toolbar>
+
+<div class="spacer"></div>
+
+<mat-drawer-container class="example-container" autosize>
+
+
+
+    <router-outlet  (activate)="onActivate($event)"></router-outlet>
+    <div *ngIf="loader" class="pre-loader">
+      <img src="assets/images/loader.gif" alt="pre loader">
+    </div>
+
+<app-footer></app-footer>
+<mat-drawer #drawer class="example-sidenav" mode="side">
+  <div class="side-bar-img-wrapper">
+    <img src="assets/images/Kasim.jpg" alt="Kasim">
+  </div>
+  <div class="side-bar">
+    <ul (click)="togglerOpened=!togglerOpened">
+
+      <li (click)="drawer.toggle()"><a [routerLinkActive]="'active'" mat-button [routerLink]="['home']">Home</a></li>
+      <li (click)="drawer.toggle()"><a [routerLinkActive]="'active'" mat-button [routerLink]="['experience']">Experience</a></li>
+      <li (click)="drawer.toggle()"><a [routerLinkActive]="'active'" mat-button [routerLink]="['education']">Education</a></li>
+      <li (click)="drawer.toggle()"><a [routerLinkActive]="'active'" mat-button [routerLink]="['projects']"> Projects</a></li>
+      <li (click)="drawer.toggle()"><a [routerLinkActive]="'active'" mat-button [routerLink]="['skills']">Skills</a></li>
+      <li (click)="drawer.toggle()"><a [routerLinkActive]="'active'" mat-button [routerLink]="['about']">Contact Me</a></li>
+      
+      
+
+    </ul>
+  </div>
+</mat-drawer>
+</mat-drawer-container>

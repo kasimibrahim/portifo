@@ -1,0 +1,51 @@
+<!--  -->
+<div *ngIf="loader" class="pre-loader">
+  <img src="assets/images/loader.gif" alt="pre loader">
+</div>
+<main>
+
+  <div class="container">
+    <div class="row bio-row">
+      <div class="col-sm-12 col-md-12 col-lg-7 col-xlg-7 bio-wrapper">
+        <h1 class="name">Hi, <span class="text-highlight">Kasim Ibrahim</span> here</h1>
+        <h1 >I'm <span class="text-animate"></span></h1>
+        <p class="bio-about-me">
+          A<span class="text-highlight"> dedicated problem solver, a quick learner, and a tech enthusiast</span> who believes in the power of coding to <span class="text-highlight">transform ideas into reality. </span>
+          My journey has been marked by <span class="text-highlight">a relentless pursuit of excellence and a commitment to pushing the boundaries of 
+          what's possible.</span> </p>
+
+        <p>Apart from coding, I love:</p>
+        <ul class="hobbies-ul">
+          <li><span>💡</span> Entrepreneurship</li>
+          <li><span>🎥</span>Watching Science fiction Movies</li>
+          <li><span>⚽</span>Reading</li>
+        </ul>
+        <p class="qoute-p"> <q>Wisdom is like a baobab tree; no one individual can embrace it</q> - African Proverb </p>
+
+        <!-- <img class="bio-image" src="assets/images/undraw_developer_activity_.svg" alt="Silas Sangmin"> -->
+        <div class="bio-image-wrapper1 my-4">
+          <swiper class="bio-image" [config]="config">
+            <!-- <ng-template swiperSlide> <img src="assets/images/undraw_version_control_re_mg66.svg"
+                alt="Silas Sangmin"></ng-template> -->
+            <ng-template swiperSlide><img src="assets/images/Kasim.jpg" alt="Kasim Ibrahim"></ng-template>
+          </swiper>
+        </div>
+
+
+        <div class="socials">
+
+          <button [routerLink]="['/experience']" mat-button>Read More <span><i class="bi bi-arrow-right"></i></span> </button>
+          
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-5 col-xlg-5 bio-image-wrapper" data-aos="fade-right">
+        <swiper [config]="config" class="swiper">
+          <ng-template swiperSlide><img src="assets/images/Kasim.jpg" alt="Kasim Ibrahim"></ng-template>
+          <!-- <ng-template swiperSlide><img src="assets/images/me.jpg" alt="Kasim Ibrahim"></ng-template>
+          <ng-template swiperSlide>Slide 6</ng-template> -->
+        </swiper>
+      </div>
+    </div>
+  </div>
+
+</main>

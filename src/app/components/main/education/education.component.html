@@ -1,0 +1,136 @@
+<div *ngIf="loader" class="pre-loader">
+  <img src="assets/images/loader.gif" alt="pre loader">
+</div>
+
+<div class="container page-header-wrapper">
+  <h2 class="page-title" ><i class="bi bi-mortarboard-fill"></i> Education</h2>
+</div>
+
+<div class="container px-0 edu-main" >
+
+  <mat-accordion class="example-headers-align" multi>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false" [expanded]="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <div class="school-thumnail">
+            <div class="school-logo-wrapper"><img src="assets/images/Ashesi_University_Logo_9cm.jpg" alt="Ashesi Logo"></div>
+          </div>
+
+        </mat-panel-title>
+        <mat-panel-description >
+         <span class="couse-tag">BSc Computer Science</span>
+          <div class="me-3 d-flex justify-content-center" > <mat-icon>date_range</mat-icon>2019 - 2023</div>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="my-5">
+        <h1 class="company-name"> <strong>Ashesi University</strong></h1>
+        <h2>Bsc Computer Science</h2>
+        <h3><span>First Class Honors</span></h3>
+        <h2> Relevant coursework: </h2>
+        <div class="row coursework-row">
+          <div class="col-sm">
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i>Data Structures & Algorithms</li>
+              <li><i class="bi bi-check-circle-fill"></i>Database Management / Database Systems</li>
+              <li><i class="bi bi-check-circle-fill"></i>Web Technologies</li>
+              <li><i class="bi bi-check-circle-fill"></i>Machine Learning</li>
+              <li><i class="bi bi-check-circle-fill"></i>Algorithm Design and Analysis</li>
+              <li><i class="bi bi-check-circle-fill"></i>Research Methods</li>
+              <li><i class="bi bi-check-circle-fill"></i>Finance for Non-finance Managers</li>
+              <li><i class="bi bi-check-circle-fill"></i>Microeconomics</li>
+              <li><i class="bi bi-check-circle-fill"></i>Operating Systems</li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i>Computer Organization and Architecture</li>
+              <li><i class="bi bi-check-circle-fill"></i>Leadership I,II, and III</li>
+              <li><i class="bi bi-check-circle-fill"></i>Human Computer Interaction</li>
+              <li><i class="bi bi-check-circle-fill"></i>Comparative Politics</li>
+              <li><i class="bi bi-check-circle-fill"></i>Intermediate Computer Programming</li>
+              <li><i class="bi bi-check-circle-fill"></i>Linear Algebra</li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i>Discrete Structures and Theory</li>
+              <li><i class="bi bi-check-circle-fill"></i>Statistics</li>
+              <li><i class="bi bi-check-circle-fill"></i>Calculus I and II</li>
+              <li><i class="bi bi-check-circle-fill"></i>Computer Programming for CS</li>
+              <li><i class="bi bi-check-circle-fill"></i>Written and Oral Communication</li>
+              <li><i class="bi bi-check-circle-fill"></i> Design thinking & Entrepreneurship I and II</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </mat-expansion-panel>
+   
+
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false" class="my-5">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <div class="school-thumnail">
+            <div class="school-logo-wrapper"><img src="assets/images/nandom-senior-high.png" alt="Ashesi Logo"></div>
+          </div>
+
+        </mat-panel-title>
+        <mat-panel-description >
+         <span class="couse-tag">Nandom Senior High</span>
+          <div class="me-3 d-flex justify-content-center" > <mat-icon>date_range</mat-icon>2014 - 2017</div>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="my-5">
+        <h1 class="company-name">Nandom Senior High</h1>
+        <h2>General Art</h2>
+        <h3>WASSCE</h3>
+          <h2> Relevant coursework: </h2>
+        <div class="row coursework-row">
+          <div class="col-sm">
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i>Elective Mathematics</li>
+              <li><i class="bi bi-check-circle-fill"></i>Geography</li>
+              <li><i class="bi bi-check-circle-fill"></i>Economics</li>
+              <li><i class="bi bi-check-circle-fill"></i>Government</li>
+              <!-- <li><i class="bi bi-check-circle-fill"></i>Algorithm Design and Analysis</li>
+              <li><i class="bi bi-check-circle-fill"></i>Research Methods</li>
+              <li><i class="bi bi-check-circle-fill"></i>Finance for Non-finance Managers</li>
+              <li><i class="bi bi-check-circle-fill"></i>Microeconomics</li> -->
+            </ul>
+          </div>
+          <div class="col-sm">
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i>Core Mathematics</li>
+              <li><i class="bi bi-check-circle-fill"></i>Integrated Science</li>
+              <li><i class="bi bi-check-circle-fill"></i>Social Studies</li>
+              <li><i class="bi bi-check-circle-fill"></i>ICT</li>
+              <!-- <li><i class="bi bi-check-circle-fill"></i>Intermediate Computer Programming</li>
+              <li><i class="bi bi-check-circle-fill"></i>Linear Algebra</li> -->
+            </ul>
+          </div>
+          <!-- <div class="col-sm">
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i>Discrete Structures and Theory</li>
+              <li><i class="bi bi-check-circle-fill"></i>Statistics</li>
+              <li><i class="bi bi-check-circle-fill"></i>Calculus I and II</li>
+              <li><i class="bi bi-check-circle-fill"></i>Computer Programming for CS</li>
+              <li><i class="bi bi-check-circle-fill"></i>Written and Oral Communication</li>
+              <li><i class="bi bi-check-circle-fill"></i> Design thinking & Entrepreneurship I and II</li>
+            </ul>
+          </div> -->
+        </div>
+
+      </div>
+
+
+    </mat-expansion-panel>
+  </mat-accordion>
+<!--Next Page-->
+<div class="container next-page-wrapper">
+  <button class="prev-page" [routerLink]="['/skills']"><span><i class="bi bi-arrow-left"></i></span>Skills </button>
+  <button class="next-page" [routerLink]="['/about']">Contact Me <span><i class="bi bi-arrow-right"></i></span> </button>
+</div>
+</div>

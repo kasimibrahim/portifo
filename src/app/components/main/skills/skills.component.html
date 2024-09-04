@@ -1,0 +1,40 @@
+<div *ngIf="loader" class="pre-loader">
+  <img src="assets/images/loader.gif" alt="pre loader" />
+</div>
+<main>
+  <div class="container page-header-wrapper">
+    <h2 class="page-title">
+      <i class="bi bi-menu-button-wide-fill"></i> Skills
+    </h2>
+  </div>
+
+  <div class="container p-0">
+    <h2 class="skill-section-header">Languages & Frameworks</h2>
+    <div *ngFor="let skill of developerSkills" class="skill-bar">
+      <div class="skill-wrapper">
+        <div class="bar" [style.width.%]="skill.level"><span>{{ skill.title }}</span> <span>{{skill.level}}%</span></div>
+      </div>
+    </div>
+
+
+    <div class="soft-skills">
+      <h2>Soft Skills</h2>
+      <div class="soft-skills-container">
+        <div *ngFor="let skill of softSkills" class="soft-skill">
+          <div class="skill-wrapper">
+            <div class="skill-title">{{ skill.title }}</div>
+            <div class="skill-description">{{ skill.description }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+  </div>
+</main>
+ <!--Next Page-->
+ <div class="container next-page-wrapper mt-3">
+  <button class="prev-page" [routerLink]="['/projects']"><span><i class="bi bi-arrow-left"></i></span>Projects</button>
+  <button class="next-page" [routerLink]="['/education']">Education<span><i class="bi bi-arrow-right"></i></span> </button>
+</div>

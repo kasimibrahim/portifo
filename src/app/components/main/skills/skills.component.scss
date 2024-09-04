@@ -1,0 +1,81 @@
+$primary-color: #23212c;
+$secondary-color: #9582f5;
+$secondary-color-2: #baf0fc;
+$dark-color: #332941;
+$black-color: #332941;
+$text-white: #FFFFFF;
+$text-grey: #eff2f2;
+$background-dark: #23212c;
+$background-light: #342f4d;
+
+.skill-bar {
+  margin-bottom: 10px;
+
+  .skill-wrapper {
+    .bar {
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(186, 240, 252, 0.4);
+      color: $secondary-color-2;
+      border-radius: 5px;
+      padding: 5px;
+      margin-bottom: 5px;
+
+      span {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.skill-section-header{
+    color: $secondary-color;
+    margin-bottom: 10px;  
+}
+.soft-skills {
+  margin-top: 20px;
+
+  h2 {
+    color: $secondary-color;
+    margin-bottom: 10px;
+  }
+
+  .soft-skills-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto;
+    
+
+    .soft-skill {
+      margin-bottom: 15px;
+      
+      width: 350px;
+
+      
+     
+      .skill-wrapper {
+        color: $secondary-color-2;
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+        padding: 10px;
+        
+        
+
+
+        .skill-title {
+          font-weight: bold;
+          margin-bottom: 5px;
+          color: $secondary-color;
+        }
+
+        .skill-description {
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
